@@ -2,26 +2,138 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/coordinatorLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1E92FF"
+        android:minHeight="?attr/actionBarSize"
 
-    <include
-        android:id="@+id/mytoolbar"
-        layout="@layout/toolbar"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        ></include>
+        app:layout_constraintVertical_bias="0.0"
+        app:title="@string/topBarName"
+        app:titleMargin="4dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="414dp"
+        android:layout_height="102dp"
+        app:backgroundTint="#1E92FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
+        android:id="@+id/currentWeightLBL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="612dp"
+        android:text="Current Weight"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentCalorieLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="423dp"
+        android:text="Current Day Calorie Count"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentExerciseTimeLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="453dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="233dp"
+        android:text="Current Exercise Time"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dashboardBTN"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="683dp"
+        android:layout_marginEnd="331dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dashbordicon" />
+
+    <ImageButton
+        android:id="@+id/logWeightBTN"
+        android:layout_width="58dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="688dp"
+        android:layout_marginEnd="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logweighticon" />
+
+    <ImageButton
+        android:id="@+id/logCaloriesBTN"
+        android:layout_width="62dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="682dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logcaloriesicon" />
+
+    <ImageButton
+        android:id="@+id/logExerciseBTN"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="339dp"
+        android:layout_marginTop="682dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logexerciseicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
