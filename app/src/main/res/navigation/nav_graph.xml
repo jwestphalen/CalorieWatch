@@ -13,12 +13,60 @@
         <action
             android:id="@+id/dashboardFragment_goto_weightFragment"
             app:destination="@id/weightFragment" />
+        <action
+            android:id="@+id/dashboardFragment_goto_caloriesFragment"
+            app:destination="@id/caloriesFragment"/>
+        <action
+            android:id="@+id/dashboardFragment_goto_exerciseFragment"
+            app:destination="@id/exerciseFragment"/>
     </fragment>
 
     <fragment
         android:id="@+id/weightFragment"
         android:name="com.example.caloriewatch.WeightFragment"
         android:label="fragment_weight"
-        tools:layout="@layout/fragment_weight"/>
+        tools:layout="@layout/fragment_weight">
+        <action
+            android:id="@+id/weightFragment_goto_dashboardFragment"
+            app:destination="@id/dashboardFragment"/>
+        <action
+            android:id="@+id/weightFragment_goto_caloriesFragment"
+            app:destination="@id/caloriesFragment"/>
+        <action
+            android:id="@+id/weightFragment_goto_exerciseFragment"
+            app:destination="@id/exerciseFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="com.example.caloriewatch.caloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories">
+        <action
+            android:id="@+id/caloriesFragment_goto_dashboardFragment"
+            app:destination="@id/dashboardFragment"/>
+        <action
+            android:id="@+id/caloriesFragment_goto_weightFragment"
+            app:destination="@id/weightFragment"/>
+        <action
+            android:id="@+id/caloriesFragment_goto_exerciseFragment"
+            app:destination="@id/exerciseFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/exerciseFragment"
+        android:name="com.example.caloriewatch.exerciseFragment"
+        android:label="fragment_exercise"
+        tools:layout="@layout/fragment_exercise">
+        <action
+            android:id="@+id/exerciseFragment_goto_dashboardFragment"
+            app:destination="@id/dashboardFragment"/>
+        <action
+            android:id="@+id/exerciseFragment_goto_weightFragment"
+            app:destination="@id/weightFragment"/>
+        <action
+            android:id="@+id/exerciseFragment_goto_caloriesFragment"
+            app:destination="@id/caloriesFragment"/>
+    </fragment>
 
 </navigation>

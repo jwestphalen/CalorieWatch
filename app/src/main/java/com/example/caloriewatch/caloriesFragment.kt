@@ -1,5 +1,6 @@
 package com.example.caloriewatch
 
+import android.media.Image
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -9,36 +10,32 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.navigation.findNavController
 
-
-class WeightFragment : Fragment() {
+class caloriesFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_calories, container, false)
 
-        val view = inflater.inflate(R.layout.fragment_weight, container, false)
-
-        val dashboardButton = view.findViewById<ImageButton>(R.id.dashboardBTN)
-        val caloriesButton = view.findViewById<ImageButton>(R.id.logCaloriesBTN)
+        val weightButton = view.findViewById<ImageButton>(R.id.logWeightBTN)
         val exerciseButton = view.findViewById<ImageButton>(R.id.logExerciseBTN)
+        val dashboardButton = view.findViewById<ImageButton>(R.id.dashboardBTN)
 
         dashboardButton.setOnClickListener {
-            Log.w(tag,"weight dashboardBTN activated")
+            Log.w(tag,"calories dashboardBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_dashboardFragment)
+                .navigate(R.id.caloriesFragment_goto_dashboardFragment)
         }
 
-        caloriesButton.setOnClickListener {
-            Log.w(tag,"weight caloriesBTN activated")
+        weightButton.setOnClickListener {
+            Log.w(tag,"calories weightBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_caloriesFragment)
+                .navigate(R.id.caloriesFragment_goto_weightFragment)
         }
 
         exerciseButton.setOnClickListener {
-            Log.w(tag,"weight exerciseBTN activated")
+            Log.w(tag,"calories exerciseBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_exerciseFragment)
+                .navigate(R.id.caloriesFragment_goto_exerciseFragment)
         }
-
         return view
     }
-
 }

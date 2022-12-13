@@ -10,35 +10,33 @@ import android.widget.ImageButton
 import androidx.navigation.findNavController
 
 
-class WeightFragment : Fragment() {
+class exerciseFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_exercise, container, false)
 
-        val view = inflater.inflate(R.layout.fragment_weight, container, false)
-
+        val weightButton = view.findViewById<ImageButton>(R.id.logWeightBTN)
         val dashboardButton = view.findViewById<ImageButton>(R.id.dashboardBTN)
         val caloriesButton = view.findViewById<ImageButton>(R.id.logCaloriesBTN)
-        val exerciseButton = view.findViewById<ImageButton>(R.id.logExerciseBTN)
 
         dashboardButton.setOnClickListener {
-            Log.w(tag,"weight dashboardBTN activated")
+            Log.w(tag,"Exercise dashboardBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_dashboardFragment)
+                .navigate(R.id.exerciseFragment_goto_dashboardFragment)
         }
 
         caloriesButton.setOnClickListener {
-            Log.w(tag,"weight caloriesBTN activated")
+            Log.w(tag,"Exercise caloriesBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_caloriesFragment)
+                .navigate(R.id.exerciseFragment_goto_caloriesFragment)
         }
 
-        exerciseButton.setOnClickListener {
-            Log.w(tag,"weight exerciseBTN activated")
+        weightButton.setOnClickListener {
+            Log.w(tag,"Exercise weightBTN activated")
             view.findNavController()
-                .navigate(R.id.weightFragment_goto_exerciseFragment)
+                .navigate(R.id.exerciseFragment_goto_weightFragment)
         }
 
         return view
     }
-
 }
