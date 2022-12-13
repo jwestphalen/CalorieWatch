@@ -103,14 +103,45 @@
         app:srcCompat="@drawable/logexerciseicon" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tdyCalCountTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="513dp"
-        android:text="TEST: CALORIES"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="611dp"
+        android:text="Today's Calorie Count"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currCalAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginBottom="539dp"
+        android:text="@string/currentDayCalorieCount"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goalCalAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="539dp"
+        android:text="@string/maxCalorieCount"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

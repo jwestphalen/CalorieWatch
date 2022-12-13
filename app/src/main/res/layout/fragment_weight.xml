@@ -104,14 +104,30 @@
         app:srcCompat="@drawable/logexerciseicon" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/currWeightTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="154dp"
-        android:layout_marginBottom="513dp"
-        android:text="TEST: WEIGHT"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="604dp"
+        android:text="Current Weight"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="543dp"
+        android:text="@string/currentWeight"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
