@@ -35,6 +35,10 @@
         <action
             android:id="@+id/weightFragment_goto_exerciseFragment"
             app:destination="@id/exerciseFragment"/>
+
+        <action
+            android:id="@+id/weightFragment_goto_addWeightFragment"
+            app:destination="@id/addWeightFragment"/>
     </fragment>
 
     <fragment
@@ -67,6 +71,17 @@
         <action
             android:id="@+id/exerciseFragment_goto_caloriesFragment"
             app:destination="@id/caloriesFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addWeightFragment"
+        android:name="com.example.caloriewatch.addWeightFragment"
+        android:label="fragment_add_weight"
+        tools:layout="@layout/fragment_add_weight">
+        <action
+            android:id="@+id/addWeightFragment_returnTo_weightFragment"
+            app:destination="@id/weightFragment"/>
+
     </fragment>
 
 </navigation>

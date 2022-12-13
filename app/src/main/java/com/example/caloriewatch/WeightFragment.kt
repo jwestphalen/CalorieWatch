@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.navigation.findNavController
+
 
 
 class WeightFragment : Fragment() {
@@ -19,6 +21,7 @@ class WeightFragment : Fragment() {
         val dashboardButton = view.findViewById<ImageButton>(R.id.dashboardBTN)
         val caloriesButton = view.findViewById<ImageButton>(R.id.logCaloriesBTN)
         val exerciseButton = view.findViewById<ImageButton>(R.id.logExerciseBTN)
+        val addWeightButton = view.findViewById<Button>(R.id.addWeightBTN)
 
         dashboardButton.setOnClickListener {
             Log.w(tag,"weight dashboardBTN activated")
@@ -37,6 +40,12 @@ class WeightFragment : Fragment() {
             view.findNavController()
                 .navigate(R.id.weightFragment_goto_exerciseFragment)
         }
+
+        addWeightButton.setOnClickListener {
+            view.findNavController()
+                .navigate(R.id.weightFragment_goto_addWeightFragment)
+        }
+
 
         return view
     }

@@ -154,7 +154,7 @@
         android:layout_marginTop="169dp"
         android:layout_marginEnd="196dp"
         android:layout_marginBottom="517dp"
-        android:text="@string/currentWeight"
+        android:text="0"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
