@@ -12,11 +12,5 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-
-        var weightButton = findViewById<ImageButton>(R.id.logWeightBTN)
-        weightButton.setOnClickListener {
-            setContentView(R.layout.fragment_weight)
-        }
-
     }
 }
