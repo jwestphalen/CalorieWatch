@@ -84,56 +84,68 @@
 
     <ImageButton
         android:id="@+id/dashboardBTN"
-        android:layout_width="54dp"
-        android:layout_height="48dp"
+        android:layout_width="86dp"
+        android:layout_height="73dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="683dp"
         android:layout_marginEnd="331dp"
         android:adjustViewBounds="false"
+        android:backgroundTint="#1E92FF"
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/dashbordicon" />
 
     <ImageButton
         android:id="@+id/logWeightBTN"
-        android:layout_width="58dp"
-        android:layout_height="43dp"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
         android:layout_marginStart="126dp"
         android:layout_marginTop="688dp"
         android:layout_marginEnd="227dp"
+        android:backgroundTint="#1E92FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logweighticon" />
 
     <ImageButton
         android:id="@+id/logCaloriesBTN"
-        android:layout_width="62dp"
-        android:layout_height="49dp"
+        android:layout_width="89dp"
+        android:layout_height="77dp"
         android:layout_marginStart="237dp"
         android:layout_marginTop="682dp"
         android:layout_marginEnd="112dp"
+        android:backgroundTint="#1E92FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logcaloriesicon" />
 
     <ImageButton
         android:id="@+id/logExerciseBTN"
-        android:layout_width="56dp"
-        android:layout_height="49dp"
+        android:layout_width="85dp"
+        android:layout_height="76dp"
         android:layout_marginStart="339dp"
         android:layout_marginTop="682dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#1E92FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.758"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logexerciseicon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
